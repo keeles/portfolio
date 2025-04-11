@@ -13,8 +13,11 @@
         <nav>
             <div class="logo">Kyle Eeles</div>
             <ul class="nav-links">
-                <li><a href="/" class="active">Portfolio</a></li>
-                <li><a href="/contact">Contact</a></li>
+                <li><a href="">e-mail</a></li>
+                <li><a href="https://linkedin.com/in/kyle-eeles" target="_blank"><img class="nav-img"
+                            src="/images/LI-In-Bug.png" alt="Link to GitHub profile" /></a></li>
+                <li><a href="https://github.com/yourusername" target="_blank"><img class="nav-img"
+                            src="/images/github-mark.svg" alt="Link to GitHub profile" /></a></li>
             </ul>
         </nav>
     </header>
@@ -22,49 +25,105 @@
     <main>
         <section class="hero">
             <h1>Hi, I'm <span class="highlight">Kyle Eeles</span></h1>
-            <p class="subtitle">Full Stack Developer</p>
+            <p class="subtitle">Full-Stack Developer</p>
             <p class="description">
-                I create responsive websites and applications with modern technologies.
-                Below are some of my recent projects.
+                I am a Full-Stack Web Developer located in Vancouver, BC. When I am not working on coding projects I
+                spend my time skateboarding and cycling. Below are some of my recent projects.
             </p>
         </section>
 
         <section class="projects">
-            <h2>My Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <img src="images/project1.jpg" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>A brief description of the project, technologies used, and your role.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="heading">
+                        <img src="images/dumpster-fire-favicon.svg" alt="Dumpster Fire Logo">
+                        <h3>Dumpster Fire</h3>
+                    </div>
+                    <p>Dumpster Fire is a message board web app, similar to reddit but heavily inspired by
+                        slapmagazine.com</p>
+                    <h3>Tech</h3>
+                    <p>Dumpster Fire was built using ASP.NET Core version 8 and a MySQL database connected using the
+                        code first approach with Entity Framework Core. The application was wrapped in a "Virtual Dom"
+                        filter to turn the Model-View-Controller style routes into asynchronous XML requests to improve
+                        the user experience by implementing single page application behavior.</p>
+                    <p>Authentication and Authorization is handle by ASP.Net Identity Framework, with user and admin
+                        roles. Third party OAuth is also enabled allowing users to register and sign-in with their
+                        Google account</p>
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://dumpsterfire-gtekhhh7dfhygfe8.canadacentral-01.azurewebsites.net/"
+                        class="btn">View Project</a>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>A brief description of the project, technologies used, and your role.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="heading">
+                        <img src="images/ziggaz_studio.jpg" alt="Ziggaz Crochet Logo">
+                        <h3>Ziggaz Crochet</h3>
+                    </div>
+                    <p>Ziggaz Crochet is a gallery / online store for a local Vancouver crochet creator that was looking
+                        to showcase her products and handle commissions and sales outside of instagram and depop</p>
+                    <h3>Tech</h3>
+                    <p>Ziggaz Crochet was built using Sanity CMS to allow for easy content management by the
+                        non-technical owner of the site. New products can be added through the Sanity Studio and
+                        published to the app all through a clean UI. Commission forms that come through the site are
+                        also shown in the Sanity Studio, allowing for easy organization for the store owner.</p>
+                    <p>
+                        The front-end of the store was built using React with Vite and Tanstack to ensure type safety
+                        and handle the routing, form submission and error handling.</p>
+                    <a rel="noopener noreferrer" target="_blank" href="https://ziggaz-store.vercel.app/"
+                        class="btn">View Project</a>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>A brief description of the project, technologies used, and your role.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="heading">
+                        <img src="images/reach-out-logo.svg" alt="Reach Out Logo">
+                        <h3>Reach Out</h3>
+                    </div>
+                    <p>ReachOut is a platform designed to bridge the gap between organizations helping formerly
+                        incarcerated individuals and employers who are open to second-chance hiring. Many of these
+                        individuals face barriers re-entering society, even though they often possess the skills,
+                        motivation, and
+                        dedication to succeed. At the same time, many employers are currently facing labor shortages
+                        despite the valuable talent pool that is available. Our platform seeks to provide a solution to
+                        both those problems.
+                    </p>
+                    <p>
+                        I was acting as project manager and
+                        full-stack developer through this project, in a team with 8 other BCIT students. 4 Designers
+                        from the Digital Design and Development and 3 other developers from the Full-Stack Web
+                        Development program.</p>
+                    <h3>Tech</h3>
+                    <p>Reach Out was built with Next.JS and a SQLite database. Using the Microsoft Azure AI API to
+                        perform resume to job-listing matching based keyword and synonymous word matching to allow users
+                        to find the most relevant jobs for them much more efficiently.</p>
+                    <a rel="noopener noreferrer" target="_blank" href="https://wereachout.ca/" class="btn">View
+                        Project</a>
                 </div>
 
                 <div class="project-card">
-                    <img src="images/project4.jpg" alt="Project 4">
-                    <h3>Project 4</h3>
-                    <p>A brief description of the project, technologies used, and your role.</p>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="heading">
+                        <img src="images/dumpster-fire-favicon.svg" alt="Dumpster Fire">
+                        <h3>Dumpster Fire</h3>
+                    </div>
+                    <p>Dumpster Fire is a message board web app, similar to reddit but heavily inspired by
+                        slapmagazine.com</p>
+                    <h3>Tech</h3>
+                    <p>Dumpster Fire was built using ASP.NET Core version 8 and a MySQL database connected using the
+                        code first approach with Entity Framework Core. The application was wrapped in a "Virtual Dom"
+                        filter to turn the Model-View-Controller style routes into asynchronous XML requests to improve
+                        the user experience by implementing single page application behavior.</p>
+                    <p>Authentication and Authorization is handle by ASP.Net Identity Framework, with user and admin
+                        roles. Third party OAuth is also enabled allowing users to register and sign-in with their
+                        Google account</p>
+                    <a rel="noopener noreferrer" target="_blank"
+                        href="https://dumpsterfire-gtekhhh7dfhygfe8.canadacentral-01.azurewebsites.net/"
+                        class="btn">View Project</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+        <p>© <span id="year"></span> Kyle Eeles</p>
     </footer>
 
     <script src="js/script.js"></script>

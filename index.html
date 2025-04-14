@@ -14,7 +14,7 @@
         <nav>
             <div class="logo">Kyle Eeles</div>
             <ul class="nav-links">
-                <li><!-- <a href="">e-mail</a> --></li>
+                <li><img class="nav-img email-icon" src="/images/email-icon.svg" alt="Send e-mail to Kyle Eeles"></li>
                 <li><a href="https://linkedin.com/in/kyle-eeles" target="_blank"><img class="nav-img"
                             src="/images/LI-In-Bug.png" alt="Link to GitHub profile" /></a></li>
                 <li><a href="https://github.com/keeles" target="_blank"><img class="nav-img"
@@ -138,7 +138,33 @@
         <p>© <span id="year"></span> Kyle Eeles</p>
     </footer>
 
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thanks for your interest!</h2>
+            <form id="emailForm">
+                <div class="form-group">
+                    <label for="senderEmail">Your Email</label>
+                    <input type="email" id="senderEmail" required placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" required placeholder="Subject of your message">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="6" required placeholder="Your message here..."></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Send</button>
+                    <span id="status-message"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>

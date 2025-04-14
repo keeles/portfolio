@@ -50,7 +50,7 @@ a {
 
 /* Header and Navigation */
 header {
-  background-color: #bfc8d6;
+  background-color: var(--primary-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -76,7 +76,7 @@ nav {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--background-color);
   position: relative;
   transition: all var(--transition-speed) ease;
 }
@@ -88,12 +88,12 @@ nav {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--primary-color);
+  background-color: #ffe2af;
   transition: width var(--transition-speed) ease;
 }
 
 .logo:hover {
-  color: var(--primary-color);
+  color: #ffe2af;
 }
 
 .logo:hover::after {
@@ -113,12 +113,12 @@ nav {
   height: 2rem;
   width: auto;
   transition: transform var(--transition-speed) ease;
-  filter: grayscale(30%);
+  filter: brightness(800%);
 }
 
 .nav-img:hover {
   transform: translateY(-3px) scale(1.1);
-  filter: grayscale(0%);
+  filter: brightness(120%);
 }
 
 .nav-links li {

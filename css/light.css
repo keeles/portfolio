@@ -464,8 +464,8 @@ footer::before {
   padding: 0.8rem 1rem;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: var(--dark-color);
-  color: var(--background-color);
+  background-color: white;
+  color: black;
   font-family: inherit;
   transition: all 0.3s ease;
 }
@@ -495,8 +495,8 @@ footer::before {
 }
 
 .submit-btn {
-  background-color: var(--primary-color);
-  color: var(--light-color);
+  background-color: var(--background-color);
+  color: var(--dark-color);
   border: none;
   border-radius: 50px;
   padding: 0.7rem 2rem;

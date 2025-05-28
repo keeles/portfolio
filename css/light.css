@@ -8,7 +8,6 @@
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -51,15 +50,51 @@ header {
 }
 
 .logo::after {
-  background-color: var(--primary-color);
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffe2af;
+  transition: width var(--transition-speed) ease;
 }
 
 .logo:hover {
-  color: var(--primary-color);
+  color: #ffe2af;
 }
 
-.logo:hover::after {
-  width: 100%;
+.nav-img {
+  filter: brightness(800%);
+}
+
+.nav-img:hover {
+  transform: translateY(-3px) scale(1.1);
+  filter: brightness(120%);
+}
+
+.nav-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 0 3rem;
+  position: relative;
 }
 
 .hero::after {
@@ -117,4 +152,46 @@ footer {
 
 footer::before {
   background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(95, 165, 92, 0.2);
+}
+
+.close {
+  color: var(--background-color);
+}
+
+.close:hover,
+.close:focus {
+  color: var(--primary-color);
+}
+
+/* Form Styling */
+.modal-content h2 {
+  color: var(--background-color);
+}
+
+.form-group label {
+  color: var(--light-color);
+}
+
+.submit-btn {
+  background-color: var(--background-color);
+  color: var(--dark-color);
+}
+
+.submit-btn:hover {
+  background-color: var(--background-color);
+}
+
+#status-message {
+  color: var(--background-color);
 }

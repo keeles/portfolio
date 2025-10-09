@@ -32,8 +32,12 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--accent-color);
   transition: all var(--transition-speed) ease;
+}
+
+a:hover {
+  color: var(--light-color);
 }
 
 header {

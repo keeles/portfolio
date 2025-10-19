@@ -173,18 +173,8 @@ section {
 .hero {
   position: relative;
   max-width: 60%;
-  height: calc(100lvh - 73px);
+  padding: 0 0 100px;
 }
-
-/* .hero::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 4px;
-} */
 
 .hero h1 {
   font-size: 3.5rem;

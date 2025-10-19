@@ -31,6 +31,10 @@ a {
   transition: all var(--transition-speed) ease;
 }
 
+a:hover {
+  color: var(--light-color);
+}
+
 header {
   background-color: var(--primary-color);
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
@@ -77,23 +81,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 5%;
-  flex: 1;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-
-.hero {
-  text-align: center;
-  padding: 5rem 0 3rem;
-  position: relative;
 }
 
 .hero::after {

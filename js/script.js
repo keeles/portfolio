@@ -77,10 +77,10 @@ const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-schem
 
 function setTheme(theme) {
   if (theme === "dark") {
-    themeStylesheet.href = "css/dark.css";
+    themeStylesheet.href = "/css/dark.css";
     themeToggle.checked = true;
   } else {
-    themeStylesheet.href = "css/light.css";
+    themeStylesheet.href = "/css/light.css";
     themeToggle.checked = false;
   }
   localStorage.setItem("theme", theme);
